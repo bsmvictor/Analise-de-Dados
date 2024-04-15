@@ -19,8 +19,7 @@ arr3 = df[1:, 9].astype(float)
 print(np.mean(arr3))
 
 # 4
-arr4 = np.char.find(arr1, "NORTHERN AMERICA")
-print(arr4) 
+arr4 = np.char.find(arr1, "NORTHERN AMERICA") != -1
 print(np.count_nonzero(arr4))
 
 # 5
