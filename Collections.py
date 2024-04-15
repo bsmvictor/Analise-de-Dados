@@ -2,22 +2,22 @@
 # -----------------------------------------------------------------------------------------------------------------------
 # Tupla ()
 nomes = ('Goku', 'Vegeta', 'Trunks', 'Gohan')
-print(nomes)
+print(f"nomes: {nomes}\n")
 
 # Slicing de dados primero dado "picotar dados para extrair apenas o desejado"
-print(nomes[0])
+print(f"nomes[0]: {nomes[0]}\n")
 
 # Slicing de dados ate 'Trunks'
-print(nomes[:2])
+print(f"nomes[:2]: {nomes[:2]}\n")
 
 # Slicing de dados 'Vegeta' e 'Trunks' [inclusive:exclusive]
-print(nomes[1:3])
+print(f"nomes[1:3]: {nomes[1:3]}\n")
 
 # Slicing de dados negativo
-print(nomes[-2])
+print(f"nomes[-2]: {nomes[-2]}\n")
 
 # TypeError: 'tuple' object does not support item assignment (Coleção imutável)
-nomes[0] = 'Picolo'
+#nomes[0] = 'Picolo'
 
 # -----------------------------------------------------------------------------------------------------------------------
 # Listas []
