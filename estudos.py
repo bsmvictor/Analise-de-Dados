@@ -5,23 +5,24 @@ path = 'C:\\Users\\victo\\Downloads\\paises.csv'
 data = np.loadtxt(path, delimiter = ';', dtype = str, encoding = 'utf-8')
 
 # #1
-# slicedData = data[:,0:4] # todas as linhas e colunas da 0 ate a 3 (4 é exclusive)
-# #print(slicedData)
+slicedData = data[:,0:4] # todas as linhas e colunas da 0 ate a 3 (4 é exclusive)
+#print(slicedData)
 
-# #2
-# slicedData = data[1:, 1] # todas as linhas a partir da 1, se n pega o titulo, da coluna 1
-# numOfRegions = np.unique(slicedData) #extraindo elementos nao repetidos
-# #print('Numero de regiões do planeta: ', np.count_nonzero(numOfRegions),
-# #      '\nDiferentes regiões do planeta: ', numOfRegions)
+#2
+slicedData = data[1:, 1] # todas as linhas a partir da 1, se n pega o titulo, da coluna 1
+numOfRegions = np.unique(slicedData) #extraindo elementos nao repetidos
+#print('Numero de regiões do planeta: ', np.count_nonzero(numOfRegions),
+#      '\nDiferentes regiões do planeta: ', numOfRegions)
 
-# #3
-# slicedData = data[1:, 9].astype(float) # todas as linhas a partir da 1 da coluna 9, converto os valores para float
-# #print('\nTaxa media de alfabetização:',np.mean(slicedData),'%')
+#3
+slicedData = data[1:, 9].astype(float) # todas as linhas a partir da 1 da coluna 9, converto os valores para float
+#print('\nTaxa media de alfabetização:',np.mean(slicedData),'%')
 
-# #4
-# slicedData = data[1:, 1]
-# na = np.char.find(slicedData,'NORTHERN AMERICA') != -1
-# #print('\nNumero de paises que fazem parte da America do Norte:',np.count_nonzero(na))
+#4
+slicedData = data[1:, 1]
+na = np.char.find(slicedData,'NORTHERN AMERICA') != -1
+print(na)
+print('\nNumero de paises que fazem parte da America do Norte:',np.count_nonzero(na))
 
 #5
 cond = np.char.find(data[:, 1], 'LATIN AMER. & CARIB  ') != -1
