@@ -35,20 +35,20 @@ df = pd.DataFrame(
 # print(df.loc[['B','C'], ['X','Y','Z']]) # separando por linhas e colunas, se utilizar : ele seleciona tudo da mesma forma do iloc
 
 # slicing de dados utilizando iloc
-# print(df.iloc[1:3,:])
+print(df.iloc[1:3,:])
 
-# ledo um csv com pandas
-dfPaises = pd.read_csv('paises.csv', delimiter=';')
-# print(dfPaises)
+# # ledo um csv com pandas
+# dfPaises = pd.read_csv('paises.csv', delimiter=';')
+# # print(dfPaises)
 
-# exemplos de leitura do dataset
-print(dfPaises.columns)  # buscando todas as colunas
-print('****************')
+# # exemplos de leitura do dataset
+# print(dfPaises.columns)  # buscando todas as colunas
+# print('****************')
 
-print(dfPaises['Country'])  # buscando apenas coluna coutry
-print('****************')
+# print(dfPaises['Country'])  # buscando apenas coluna coutry
+# print('****************')
 
-print(dfPaises.head(5))  # buscando 5 primeiros registros de um df
-print('****************')
+# print(dfPaises.head(5))  # buscando 5 primeiros registros de um df
+# print('****************')
 
-print(dfPaises.tail(2))  # buscando 2 ultimos registros de um df
+# print(dfPaises.tail(2))  # buscando 2 ultimos registros de um df
